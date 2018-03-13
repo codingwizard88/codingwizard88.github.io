@@ -10,14 +10,19 @@
   </head>
   <body>
     <header>Welcome to the Coding Blog!</header>
-    <nav>
-      <a href="#">Contact us</a>
-      <a href="#">Library</a>
-    </nav>
-    <blockquote>
-      <p>
-        "Coding is logic, coding is life!"
-      </p>
-    </blockquote>
+  <script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
   </body>
 </html>
