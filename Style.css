@@ -1,5 +1,7 @@
 header { 
+    color: red;
     display: block;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
 }
